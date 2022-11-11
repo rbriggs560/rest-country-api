@@ -125,7 +125,6 @@ function getButton() {
   buttonGroup.addEventListener("click", function (buttonClick) {
     const currentButton = buttonClick.target;
     const id = currentButton.id;
-    console.log(id);
     if (id == "N/A") {
       return;
     } else {
