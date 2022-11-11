@@ -1,0 +1,259 @@
+:root {
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-background: hsl(207, 26%, 17%);
+  --light-mode-text-color: hsl(200, 15%, 8%);
+  --color-for-input: hsl(0, 0%, 52%);
+  --light-Mode-Background-color: hsl(0, 0%, 98%);
+  --dark-mood-text-color: hsl(0, 0%, 100%);
+  --mobile-size: 375px;
+  --desktop: 1440px;
+  --homepage-Items-text-size: 14px;
+  --detail-page-size: 16px;
+  --font-weights: 300, 600, 800;
+  --font-familt: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: var(--dark-mode-background);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 400px;
+  height: 200px;
+}
+
+/* NAVBAR STYLE**/
+nav {
+  background-color: var(--dark-mode-elements);
+  padding: 1px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-mood-text-color);
+  font-weight: var(--font-weights);
+}
+
+nav a:hover {
+  cursor: pointer;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--dark-mode-elements);
+  border: 0;
+}
+
+/*CLASSES **/
+.input-box {
+  background-color: var(--dark-mode-elements);
+  color: var(--dark-mood-text-color);
+  border: none;
+  width: 83%;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.user-input-box {
+  padding: 20px;
+}
+
+.second-layer {
+  background-color: var(--dark-mode-elements);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.regions {
+  margin-top: 20px;
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: var(--dark-mode-elements);
+}
+/* MAIN SECTION */
+.container {
+  margin: 1rem;
+  color: var(--dark-mood-text-color);
+}
+
+/* Contented added through javaScript */
+.main-div-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.container span {
+  margin-left: 2px;
+}
+
+.style-image {
+  width: 320px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.description-box {
+  background-color: var(--dark-mode-elements);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1rem;
+  height: 200px;
+  margin-bottom: 1rem;
+  margin-top: -5px;
+}
+
+/* A tag with images */
+a.country-link {
+  text-decoration: none;
+  color: var(--dark-mood-text-color);
+}
+a.country-link:hover {
+  cursor: pointer;
+}
+
+/* ending */
+
+/* contend on detail page */
+.detail-container-main {
+  width: 320px;
+  margin: 0 auto;
+}
+.back-button {
+  margin: 2em;
+  padding: 1em;
+  width: 100px;
+  background-color: var(--dark-mode-elements);
+}
+
+a.back-button-main {
+  text-decoration: none;
+  color: var(--dark-mood-text-color);
+  font-size: var(--detail-page-size);
+}
+
+.country-information {
+  color: var(--dark-mood-text-color);
+}
+
+.image-tag {
+  width: 300px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.first-section {
+  margin-bottom: 3em;
+}
+
+.second-section {
+  margin-bottom: 3em;
+}
+
+.border-added {
+  background-color: var(--dark-mode-elements);
+  color: var(--dark-mood-text-color);
+  padding: 0.3em;
+  border: none;
+}
+
+.border-added:hover {
+  cursor: pointer;
+}
+
+.borders-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+/* END */
+
+@media (min-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3em;
+    padding: 1em;
+    color: var(--dark-mood-text-color);
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .container span {
+    margin-left: 2px;
+  }
+
+  .image-tag {
+    width: 500px;
+    height: 300px;
+  }
+  .detail-container-main {
+    width: 2000px;
+    margin: 0 auto;
+    padding: 4em;
+  }
+  .detail-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+  }
+
+  .country-information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-layer-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .second-section {
+    margin-top: 3.9em;
+  }
+
+  .user-input-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1500px;
+    margin: 0 auto;
+  }
+
+  .second-layer {
+    width: 300px;
+    height: 40px;
+  }
+
+  .regions {
+    border-radius: 5px;
+  }
+
+  .all {
+    color: var(--dark-mood-text-color);
+  }
+
+  input:focus,
+  select:focus,
+  option:focus {
+    outline: none;
+  }
+
+  option {
+    color: var(--dark-mood-text-color);
+  }
+}
