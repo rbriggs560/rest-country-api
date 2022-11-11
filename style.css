@@ -230,11 +230,13 @@ a.back-button-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1500px;
-    margin: 0 auto;
+    margin-right: 3.5em;
+    margin-left: 3.5em;
+    padding-bottom: 4em;
   }
 
   .second-layer {
+    margin-top: 1em;
     width: 300px;
     height: 40px;
   }
